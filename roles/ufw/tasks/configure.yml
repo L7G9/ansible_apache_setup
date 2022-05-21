@@ -1,0 +1,10 @@
+---
+- name: allow ssh
+  ufw:
+    rule: allow
+    name: OpenSSH
+
+- name: allow http
+  ufw:
+    rule: allow
+    name: Apache Full

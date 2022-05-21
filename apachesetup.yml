@@ -1,0 +1,7 @@
+---
+- name: set up apache on webservers
+  hosts: web_servers
+  become: yes
+  roles:
+    - apache
+    - ufw

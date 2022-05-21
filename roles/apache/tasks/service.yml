@@ -1,0 +1,7 @@
+---
+# tasks file for apache
+- name: start and enable apache service
+  service:
+    name: apache2
+    state: restarted
+    enabled: yes

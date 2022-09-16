@@ -1,13 +1,6 @@
 ---
 # tasks file for apache
-
-#- name: copy index.html file
-#  copy:
-#    src: files/index.html
-#    dest: /var/www/html
-
 - name: create index webpage from template
   template:
     src: index.j2
     dest: /var/www/html/index.html
-

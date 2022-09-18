@@ -5,11 +5,15 @@ A role to configure UFW for use with Apache.  Also configures UFW so Ansible can
 Requirements
 ------------
 Ansible UFW module.  
-You can check if this is installed with...
-'$ ansible-doc -l'
+Check if this is installed with:
+```
+$ ansible-doc -l
+```
 
-Then install if required...
-'$ ansible-galaxy collection install community.general'
+Install with:
+```
+$ ansible-galaxy collection install community.general
+```
 
 Role Variables
 --------------
@@ -21,12 +25,15 @@ None.
 
 Example Playbook
 ----------------
+
+```
 ---
 - name: set up ufw for apache on webservers
   hosts: web_servers
   become: yes
   roles:
     - ufw
+```
 
 Author Information
 ------------------
